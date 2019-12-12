@@ -20,7 +20,7 @@ public class Client {
             Scanner in = new Scanner(System.in);
             String name = in.nextLine();
             IHandle handle = (IHandle) Naming.lookup("rmi://localhost:8082/string");
-            System.out.println( handle.trueString(name));
+            System.out.println(handle.trueString(name));
         } catch (Exception e) {
             e.printStackTrace();
         }
